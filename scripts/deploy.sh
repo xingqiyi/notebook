@@ -1,8 +1,4 @@
-#!/bin/bash
-#Auth: bell@greedlab.com
-#
-# deploy
-#
+ 
 
 # 当前目录
 CURRENT_DIR=${PWD}
@@ -13,7 +9,7 @@ SCRIPT_DIR=$(cd "$(dirname "$0")"; pwd)
 ## blog 目录
 BLOG_DIRECTORY=${SCRIPT_DIR}/..
 
-GITHUB_REF=github.com/GreedBell/blog.git
+GITHUB_REF=github.com/xingqiyi/blog.git
 
 if ! [ -n "${GITHUB_API_KEY}" ]; then
   echo "no valid GITHUB_API_KEY"
@@ -37,13 +33,15 @@ fi
 echo Deploy to GitHub Pages
 cd ${BLOG_DIRECTORY}/_book
 git init
-git config user.email "bell@greedlab.com"
-git config user.name "Bell"
-git remote add upstream https://GreedBell:${GITHUB_API_KEY}@${GITHUB_REF}
+git config user.email "448378892@qq.com"
+git config user.name "xingqiyi"
+#git remote add upstream https://GreedBell:${GITHUB_API_KEY}@${GITHUB_REF}
+git remote add upstream https://xingqiyi:${GITHUB_API_KEY}@${GITHUB_REF}
+
 git fetch upstream
-git reset upstream/gh-pages
+git reset upstream/master
 git add . --all
 git commit -m "Deploy to GitHub Pages by travis"
-git push -q upstream HEAD:gh-pages
+git push -q upstream HEAD:master
 
 cd ${CURRENT_DIR}
