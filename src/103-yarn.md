@@ -13,6 +13,7 @@ yarn == yarn install
 yarn start == npm start
 
 
+yarn init
 
 
 npm i -g serve  //静态文件服务 
