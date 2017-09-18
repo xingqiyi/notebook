@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>204-RN_ios · GitBook</title>
+        <title>101-git · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="205-RN_环境配置.md" />
+    <link rel="next" href="102-md.html" />
     
     
-    <link rel="prev" href="203-RN_android.html" />
+    <link rel="prev" href="002-css.html" />
     
 
     </head>
@@ -137,7 +137,7 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="101-git.html">
+        <li class="chapter active" data-level="2.1" data-path="101-git.html">
             
                 <a href="101-git.html">
             
@@ -261,7 +261,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.4" data-path="204-RN_ios.html">
+        <li class="chapter " data-level="3.4" data-path="204-RN_ios.html">
             
                 <a href="204-RN_ios.html">
             
@@ -409,7 +409,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >204-RN_ios</a>
+        <a href=".." >101-git</a>
     </h1>
 </div>
 
@@ -424,58 +424,33 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="1">1</h2>
-<p>&#x521D;&#x59CB;&#x5316;  &#x7248;&#x672C;&#x6307;&#x5B9A;
-react-native init AwesomeProject  --version 0.44.3</p>
-<h2 id="2-no-bundle-url-present-make-sure">2 no bundle url present make sure</h2>
-<pre><code>Edit &lt;your_project_folder&gt;/ios/&lt;project_name&gt;/AppDelegate.m and change the jsCodeLocation variable as follows:
+                                <h2 id="git-branch">git branch</h2>
+<ul>
+<li><code>git branch</code> &#x5217;&#x51FA;&#x672C;&#x5730;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x5206;&#x652F;</li>
+<li><code>git branch -a</code> &#x5217;&#x51FA;&#x672C;&#x5730;&#x5206;&#x652F;&#x548C;&#x8FDC;&#x7A0B;&#x5206;&#x652F;</li>
+<li><code>git branch -d &lt;branch&gt;</code> &#x5220;&#x9664;&#x5206;&#x652F;</li>
+<li><code>git push origin --delete dev</code> &#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;</li>
+<li><code>git branch dev</code>&#x521B;&#x5EFA;&#x5206;&#x652F;</li>
+<li><code>git checkout dev</code> &#x5207;&#x6362;&#x5206;&#x652F;</li>
+<li><code>git push origin dev</code>  &#x9700;&#x8981;&#x5207;&#x6362;&#x5230;  dev &#x5206;&#x652F;&#x4E0B; </li>
+</ul>
+<h2 id="git-diff">git diff</h2>
+<ul>
+<li><code>git diff origin/master origin/dev</code>    dev&#x5206;&#x652F;&#x76F8;&#x5BF9;master&#x5206;&#x652F;&#x7684;&#x4FEE;&#x6539;</li>
+</ul>
+<h2 id="git-merge">git merge</h2>
+<ul>
+<li><code>git merge dev</code>  &#x5728; master &#x5206;&#x652F;&#x4E0B; merge dev &#x5230; master</li>
+</ul>
+<h2 id="git-tag">git tag</h2>
+<ul>
+<li><code>git tag -a v1.4 -m &apos;my version 1.4&apos;</code> &#x6DFB;&#x52A0;&#x6807;&#x7B7E;</li>
+<li><code>git push origin v1.5</code>  &#x6807;&#x7B7E;&#x63A8;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;</li>
+<li><code>git push origin --tags</code>&#x63A8;&#x9001;&#x6240;&#x6709;&#x6807;&#x7B7E;</li>
+</ul>
+<h2 id="git-flow">git flow</h2>
+<h2 id="git-log">git log</h2>
 
-jsCodeLocation =
-    [NSURL URLWithString:@&quot;http://127.0.0.1:8081/index.ios.bundle?platform=ios&amp;dev=true&quot;];
-</code></pre><h2 id="3">3</h2>
-<p> &#x5728;&#x5F00;&#x53D1;&#x8005;&#x83DC;&#x5355;&#x4E2D;&#x9009;&#x62E9;&quot;Debug JS Remotely&quot;&#x9009;&#x9879;&#xFF0C;
- &#x5373;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x5728;Chrome&#x4E2D;&#x8C03;&#x8BD5;JavaScript&#x4EE3;&#x7801;&#x3002;&#x70B9;&#x51FB;&#x8FD9;&#x4E2A;&#x9009;&#x9879;&#x7684;&#x540C;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x8C03;&#x8BD5;&#x9875;&#x9762; <a href="http://localhost:8081/debugger-ui" target="_blank">http://localhost:8081/debugger-ui</a>.</p>
-<h2 id="4-ios-&#x771F;&#x673A;-&#x8C03;&#x8BD5;">4 ios &#x771F;&#x673A; &#x8C03;&#x8BD5;</h2>
-<p>RCTWebSocketExecutor.m
-localhost &#x6539; ip</p>
-<p>AppDelegate.m   &#x6539;&#x4E3A; ip
-jsCodeLocation =   [NSURL URLWithString:@&quot;<a href="http://192.168.1.255:8081/index.ios.bundle?platform=ios&amp;dev=true" target="_blank">http://192.168.1.255:8081/index.ios.bundle?platform=ios&amp;dev=true</a>&quot;];</p>
-<h2 id="5">5</h2>
-<p>&#x771F;&#x673A;&#x8C03;&#x8BD5; &#x8BBE;&#x7F6E; team &#x62A5;&#x9519;
-Failed to create provisioning profile. The app ID</p>
-<p>&#x9009;&#x62E9; ssr</p>
-<h2 id="6--&#x771F;&#x673A;&#x8C03;&#x8BD5;&#x65F6;--&#x6253;&#x5305;&#x65F6;">6  &#x771F;&#x673A;&#x8C03;&#x8BD5;&#x65F6;  &#x6253;&#x5305;&#x65F6;</h2>
-<p>Please unlock your device and reattach. (0xE80000E2).</p>
-<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#xFF1A;&#x6253;&#x5F00;&#x624B;&#x673A;&#x8BBE;&#x7F6E;-&gt;&#x901A;&#x7528;-&gt;&#x8FD8;&#x539F;-&gt;&#x8FD8;&#x539F;&#x4F4D;&#x7F6E;&#x4E0E;&#x9690;&#x79C1;&#xFF1B;
-&#x7136;&#x540E;&#x4F1A;&#x6709;&#x5F39;&#x7A97;&#x63D0;&#x793A;&#x4F60;&#x662F;&#x5426;&#x4FE1;&#x4EFB;&#x6B64;&#x7535;&#x8111;&#xFF0C;&#x70B9;&#x51FB;&#x4FE1;&#x4EFB;&#xFF0C;&#x91CD;&#x542F;Xcode&#x4E4B;&#x540E;&#xFF0C;&#x8FD0;&#x884C;&#x9879;&#x76EE;&#x5230;&#x624B;&#x673A;&#x4E0A;
-&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x6765;&#x81EA;&#x4E8E;&#xFF1A;iOS&#x4E2D;&#x9879;&#x76EE;&#x8FD0;&#x884C;&#x5230;&#x771F;&#x673A;&#x4E0A;&#x63D0;&#x793A;&#x8BBE;&#x5907;&#x88AB;&#x9501;&#x5B9A;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;Development cannot be enabled while your device is locked. &#xFF0C;&#x8C22;&#x8C22;</p>
-<h2 id="7--no-devices-are-booted">7  No devices are booted.</h2>
-<p>&#x91CD;&#x542F;&#x6A21;&#x62DF;&#x5668;</p>
-<p>Boot the respective simulator manually
-Go to spotlight search and start to type simulator
-When spotlight presents the search result, choose the simulator app and hit Enter
-Go to simulator app&apos;s menu: Hardwire -&gt; Device -&gt; iOS 10.0 -&gt; iPhone 6 and select it
-Reset
-Go to simulator app&apos;s menu: Simulator -&gt; Reset Content and Settings...
-Retry
-Command react-native run-ios again</p>
-<h2 id="8-print-entry-cfbundleidentifier-does-not-exist">8 Print: Entry, &quot;:CFBundleIdentifier&quot;, Does Not Exist</h2>
-<pre><code>rm -rf ~/.rncache
-</code></pre><h2 id="9-&#x6A21;&#x62DF;&#x5668;-&#x4E0E;&#x771F;&#x673A;&#x76F4;&#x63A5;&#x7684;&#x5207;&#x6362;---&#x6253;&#x5305;&#x65F6;&#x9700;&#x6539;&#x6210;&#x771F;&#x673A;">9 &#x6A21;&#x62DF;&#x5668; &#x4E0E;&#x771F;&#x673A;&#x76F4;&#x63A5;&#x7684;&#x5207;&#x6362;   &#x6253;&#x5305;&#x65F6;&#x9700;&#x6539;&#x6210;&#x771F;&#x673A;</h2>
-<pre><code>AppDelegate.m
-#&#x6A21;&#x62DF;&#x5668;
- jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@&quot;index.ios&quot; fallbackResource:nil];
-#&#x771F;&#x673A;&#xFF1A;
-jsCodeLocation = [[NSBundle mainBundle] URLForResource:@&quot;index.ios&quot; withExtension:@&quot;jsbundle&quot;];
-</code></pre><h2 id="10">10</h2>
-<h2 id="11-no-dimension-set-for-key-window">11 no dimension set for key window</h2>
-<pre><code>&#x5220;&#x6389; ios/build &#x91CD;&#x8FD0;&#x884C;
-</code></pre><h2 id="12-&#x6839;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x4E0D;&#x80FD;&#x53EB;-indexjs---&#x731C;&#x6D4B;&#x5E94;&#x8BE5;&#x662F;&#x4E0E;-indexiosjs-&#x51B2;&#x7A81;">12 &#x6839;&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#x4E0D;&#x80FD;&#x53EB; index.js   &#x731C;&#x6D4B;&#x5E94;&#x8BE5;&#x662F;&#x4E0E; index.ios.js &#x51B2;&#x7A81;</h2>
-<h2 id="13-&#x6253;&#x5305;">13 &#x6253;&#x5305;</h2>
-<pre><code>&#x6253;&#x5305; &#x9700;&#x8981;&#x5728; ios   &#x6587;&#x4EF6;&#x5939;; android &#x9700;&#x8981;&#x65B0;&#x5EFA;assets &#x6587;&#x4EF6;&#x5939;
-
- http://blog.csdn.net/sinat_34380438/article/details/76614309
-</code></pre>
                                 
                                 </section>
                             
@@ -502,12 +477,12 @@ jsCodeLocation = [[NSBundle mainBundle] URLForResource:@&quot;index.ios&quot; wi
 
             
                 
-                <a href="203-RN_android.html" class="navigation navigation-prev " aria-label="Previous page: 203-RN_android">
+                <a href="002-css.html" class="navigation navigation-prev " aria-label="Previous page: 002-css">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="205-RN_环境配置.md" class="navigation navigation-next " aria-label="Next page: 205-RN_环境配置">
+                <a href="102-md.html" class="navigation navigation-next " aria-label="Next page: 102-md">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -518,7 +493,7 @@ jsCodeLocation = [[NSBundle mainBundle] URLForResource:@&quot;index.ios&quot; wi
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"204-RN_ios","level":"3.4","depth":1,"next":{"title":"205-RN_环境配置","level":"3.5","depth":1,"path":"src/205-RN_环境配置.md","ref":"src/205-RN_环境配置.md","articles":[]},"previous":{"title":"203-RN_android","level":"3.3","depth":1,"path":"src/203-RN_android.md","ref":"src/203-RN_android.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/204-RN_ios.md","mtime":"2017-09-18T14:21:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-18T15:30:48.500Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"101-git","level":"2.1","depth":1,"next":{"title":"102-md","level":"2.2","depth":1,"path":"src/102-md.md","ref":"src/102-md.md","articles":[]},"previous":{"title":"002-css","level":"1.3","depth":1,"path":"src/002-css.md","ref":"src/002-css.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/101-git.md","mtime":"2017-09-18T15:25:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-18T16:20:06.132Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

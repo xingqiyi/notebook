@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>103-yarn · GitBook</title>
+        <title>403-kubuntu · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="104-npm.html" />
+    <link rel="next" href="501-node.html" />
     
     
-    <link rel="prev" href="102-md.html" />
+    <link rel="prev" href="402-linux.html" />
     
 
     </head>
@@ -163,7 +163,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="103-yarn.html">
+        <li class="chapter " data-level="2.3" data-path="103-yarn.html">
             
                 <a href="103-yarn.html">
             
@@ -320,7 +320,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="403-kubuntu.html">
+        <li class="chapter active" data-level="4.3" data-path="403-kubuntu.html">
             
                 <a href="403-kubuntu.html">
             
@@ -409,7 +409,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >103-yarn</a>
+        <a href=".." >403-kubuntu</a>
     </h1>
 </div>
 
@@ -424,24 +424,61 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <pre><code class="lang-bash">yarn add  eslint-plugin-import --dev
-
-yarn remove eslint-plugin-import
-
-yarn global add eslint
-
-
-yarn == yarn install
-
-
-yarn start == npm start
-
-
-
-
-npm i -g serve  //&#x9759;&#x6001;&#x6587;&#x4EF6;&#x670D;&#x52A1; 
-serve folderName  //&#x53D1;&#x5E03;
-</code></pre>
+                                <p>dolphin:
+f3    &#x62C6;&#x5206;&#x5207;&#x6362;</p>
+<p>f8  &#x9690;&#x85CF;&#x6587;&#x4EF6;</p>
+<p>kconsole:
+ctrl + shift + k/l  &#x6E05;&#x5C4F;
+ctrl + w  &#x5173;&#x95ED;&#x6807;&#x7B7E;</p>
+<p>&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;
+&#x3000;&#x3000;&#x5982;&#x679C;&#x53EA;&#x662F;&#x60F3;&#x4E34;&#x65F6;&#x4F7F;&#x7528;http&#x4EE3;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4F7F;&#x7528;apt-get&#x4E4B;&#x524D;&#x4E8E;&#x7EC8;&#x7AEF;&#x4E0B;&#x8F93;&#x5165;&#xFF1A;
+    export http_proxy=&quot;<a href="http://&#x7528;&#x6237;&#x540D;:&#x5BC6;&#x7801;@&#x4EE3;&#x7406;IP:&#x4EE3;&#x7406;&#x7AEF;&#x53E3;" target="_blank">http://&#x7528;&#x6237;&#x540D;:&#x5BC6;&#x7801;@&#x4EE3;&#x7406;IP:&#x4EE3;&#x7406;&#x7AEF;&#x53E3;</a>&quot;
+    export http_proxy=&quot;<a href="http://192.168.1.20:1080" target="_blank">http://192.168.1.20:1080</a>&quot;</p>
+<p>&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;&#xFF08;&#x65B9;&#x6CD5;&#x4E00;&#x7684;&#x6301;&#x4E45;&#x5316;&#xFF09;
+&#x3000;&#x3000;&#x5982;&#x679C;&#x5E0C;&#x671B;apt-get&#x4E0E;&#x5176;&#x5B83;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x90FD;&#x53EF;&#x4EE5;&#x4E00;&#x76F4;&#x4F7F;&#x7528;http&#x4EE3;&#x7406;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#xFF1A; 
+&#x3000;&#x3000;&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x7F16;&#x8F91;~/.bashrc&#x6587;&#x4EF6;&#xFF1A;&#x3000;&#x3000;vim ~/.bashrc
+&#x3000;&#x3000;&#x5728;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4E24;&#x53E5;&#xFF1A;</p>
+<pre><code>http_proxy=&quot;http://192.168.1.20:1080&quot;
+export http_proxy
+</code></pre><p>&#x5168;&#x5C40;
+f1             &#x684C;&#x9762;
+alt + s      google
+alt + b        baidu</p>
+<p>f4            mac&#x7684;f3</p>
+<p>ctrl+alt+esc    kill &#x4E00;&#x4E2A;&#x7A97;&#x53E3;    </p>
+<p>linux &#x6302;&#x8F7D;  ntfs
+&#x5148;&#x5B89;&#x88C5;&#xFF1A;
+sudo apt-get install ntfs-config
+&#x518D;&#x914D;&#x7F6E;&#x4E00;&#x4E0B;&#xFF1A;
+sudo ntfs-config</p>
+<p>&#x683C;&#x5F0F;&#x5316;&#x4E3A; ntfs
+sudo apt-get install ntfsprogs
+sudo mkntfs /dev/sdb1</p>
+<p>sudo mkfs.vfat -F 32 /dev/sdb1&#x5373;&#x53EF;&#x5C06;u&#x76D8;&#x683C;&#x5F0F;&#x5316;&#x4E3A;fat32&#x683C;&#x5F0F;&#x3002; 
+&#x5047;&#x5982;&#x4F60;&#x8981;&#x628A;&#x6307;&#x5B9A;&#x78C1;&#x76D8;&#x683C;&#x5F0F;&#x5316;&#x4E3A;NTFS&#x683C;&#x5F0F;&#x90A3;&#x4E48;&#x4F60;&#x9700;&#x8981;sudo apt-get install ntfsprogs&#x6765;&#x5B89;&#x88C5;ntfs&#x8BFB;&#x5199;&#x5DE5;&#x5177;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;sudo mkfs.ntfs /dev/sda1&#xFF0C;&#x6B64;&#x8FC7;&#x7A0B;&#x4F1A;&#x5F88;&#x6162;&#x3002;&#x5BF9;&#x4E8E;&#x8981;&#x683C;&#x5F0F;&#x5316;&#x4E3A;linux ext&#x683C;&#x5F0F;&#x7684;&#x5206;&#x533A;&#x5C31;&#x66F4;&#x5BB9;&#x6613;&#x4E86;&#xFF1A; 
+sudo mkfs.ext4 /dev/sda1 # &#x683C;&#x5F0F;&#x5316;&#x4E3A;ext4&#x5206;&#x533A; 
+sudo mkfs.ext3 /dev/sda1 # &#x683C;&#x5F0F;&#x5316;&#x4E3A;ext3&#x5206;&#x533A; 
+sudo mkfs.ext2 /dev/sda1 #&#x683C;&#x5F0F;&#x5316;&#x4E3A;ext2&#x5206;&#x533A; 
+PS&#xFF1A;&#x5BF9;&#x4E8E;&#x8981;&#x683C;&#x5F0F;&#x5316;&#x7684;&#x5206;&#x533A;&#x5FC5;&#x987B;&#x8981;&#x5148;&#x7528;umount&#x5378;&#x8F7D;&#x6389;&#x624D;&#x80FD;&#x683C;&#x5F0F;&#x5316;&#x54E6;&#x3002; </p>
+<h1 id="&#x5907;&#x4EFD;&#x7CFB;&#x7EDF;&#xFF1A;&#x5230;-mediabkp&#xFF1A;">&#x5907;&#x4EFD;&#x7CFB;&#x7EDF;&#xFF1A;&#x5230; /media/bkp&#xFF1A;</h1>
+<h1 id="&#x6E05;&#x7406;&#x65E7;&#x7248;&#x672C;&#x7684;&#x8F6F;&#x4EF6;&#x7F13;&#x5B58;">&#x6E05;&#x7406;&#x65E7;&#x7248;&#x672C;&#x7684;&#x8F6F;&#x4EF6;&#x7F13;&#x5B58;</h1>
+<p>sudo apt-get autoclean
+#</p>
+<h1 id="&#x6E05;&#x7406;&#x6240;&#x6709;&#x8F6F;&#x4EF6;&#x7F13;&#x5B58;">&#x6E05;&#x7406;&#x6240;&#x6709;&#x8F6F;&#x4EF6;&#x7F13;&#x5B58;</h1>
+<p>sudo apt-get clean
+#</p>
+<h1 id="&#x5220;&#x9664;&#x7CFB;&#x7EDF;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x7684;&#x5B64;&#x7ACB;&#x8F6F;&#x4EF6;">&#x5220;&#x9664;&#x7CFB;&#x7EDF;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x7684;&#x5B64;&#x7ACB;&#x8F6F;&#x4EF6;</h1>
+<p>sudo apt-get autoremove</p>
+<p>sudo tar vzcpf /media/bkp/ubuntu<em>`date +%Y%m%d</em>%H<code>.tar.gz --exclude=/proc --exclude=/dev--exclude=/mnt --exclude=/media --exclude=/lost+found --exclude=/cdrom --exclude=/tmp --exclude=/sys --exclude=/home/xx/.cache --exclude=/run / &gt; /media/bkp/ubuntu_</code>date +%Y%m%d<em>%H`.log 2&gt; /media/bkp/ubuntu</em><code>date +%Y%m%d_%H</code>.error</p>
+<p>&#x6062;&#x590D;&#x7CFB;&#x7EDF;&#xFF1A;
+&#x63A8;&#x8350;&#x5907;&#x4EFD;&#x4E0B;&#xFF1A;/boot&#x548C;/etc/fstab&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6267;&#x884C;&#x6062;&#x590D;&#x547D;&#x4EE4;
+&#x5C06;&#x5907;&#x4EFD;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230;/&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;&#x6062;&#x590D;&#x547D;&#x4EE4;&#xFF1A;</p>
+<h1 id="&#x4F7F;&#x7528;gzip&#x683C;&#x5F0F;">&#x4F7F;&#x7528;gzip&#x683C;&#x5F0F;</h1>
+<p>su - root
+tar vxzpf ubuntu*.tar.gz -C /</p>
+<p>KDE - Baloo file-index is not working
+Disable it in ~/.kde4/share/config/baloofilerc. Set
+Indexing-Enabled=false</p>
 
                                 
                                 </section>
@@ -469,12 +506,12 @@ serve folderName  //&#x53D1;&#x5E03;
 
             
                 
-                <a href="102-md.html" class="navigation navigation-prev " aria-label="Previous page: 102-md">
+                <a href="402-linux.html" class="navigation navigation-prev " aria-label="Previous page: 402-linux">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="104-npm.html" class="navigation navigation-next " aria-label="Next page: 104-npm">
+                <a href="501-node.html" class="navigation navigation-next " aria-label="Next page: 501-node">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -485,7 +522,7 @@ serve folderName  //&#x53D1;&#x5E03;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"103-yarn","level":"2.3","depth":1,"next":{"title":"104-npm","level":"2.4","depth":1,"path":"src/104-npm.md","ref":"src/104-npm.md","articles":[]},"previous":{"title":"102-md","level":"2.2","depth":1,"path":"src/102-md.md","ref":"src/102-md.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/103-yarn.md","mtime":"2017-09-18T15:26:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-18T15:30:48.500Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"403-kubuntu","level":"4.3","depth":1,"next":{"title":"501-node","level":"5.1","depth":1,"path":"src/501-node.md","ref":"src/501-node.md","articles":[]},"previous":{"title":"402-linux","level":"4.2","depth":1,"path":"src/402-linux.md","ref":"src/402-linux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/403-kubuntu.md","mtime":"2017-09-18T15:19:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-18T16:20:06.132Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

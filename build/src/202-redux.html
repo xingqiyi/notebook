@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>503-redis · GitBook</title>
+        <title>202-redux · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="203-RN_android.html" />
     
-    <link rel="prev" href="502-pm2.html" />
+    
+    <link rel="prev" href="201-react.html" />
     
 
     </head>
@@ -233,7 +235,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="202-redux.html">
+        <li class="chapter active" data-level="3.2" data-path="202-redux.html">
             
                 <a href="202-redux.html">
             
@@ -364,7 +366,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="5.3" data-path="503-redis.html">
+        <li class="chapter " data-level="5.3" data-path="503-redis.html">
             
                 <a href="503-redis.html">
             
@@ -407,7 +409,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >503-redis</a>
+        <a href=".." >202-redux</a>
     </h1>
 </div>
 
@@ -422,36 +424,42 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x67E5;&#x770B; redis&#x76F8;&#x5173;&#x4FE1;&#x606F;
-redis-cli -h localhost info</p>
-<p>redis-cli -h localhost info | grep &apos;redis_version&apos;</p>
-<p>redis-server -v</p>
-<p>config set stop-writes-on-bgsave-error no</p>
-<p>redis-cli -h 192.168.1.10 -p 6379
-auth Geonoon
-keys *
-smembers setname
-flushdb</p>
-<p>&#x5176;&#x5B9E;Redis&#x662F;&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x6210;windows&#x670D;&#x52A1;&#x7684;&#xFF0C;&#x5F00;&#x673A;&#x81EA;&#x542F;&#x52A8;&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;
-redis-server --service-install redis.windows.conf
-&#x5B89;&#x88C5;&#x5B8C;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x770B;&#x5230;Redis&#x5DF2;&#x7ECF;&#x4F5C;&#x4E3A;windows&#x670D;&#x52A1;&#x4E86;
-&#x542F;&#x52A8;&#x505C;&#x6B62;&#x670D;&#x52A1;:
-redis-server --service-start
-redis-server --service-stop</p>
-<p>lua:</p>
-<h1 id="redis-cli---eval-detectlua">redis-cli --eval detect.lua</h1>
-<p>SET detect &quot;ssss&quot;
-SCRIPT LOAD &quot;local f=loadstring(redis.call(&apos;get&apos;,KEYS[1]));return f()&quot;
-EVALSHA &quot;1d757ea0d253288071ab7e2358562b8721098142&quot; 1 detect okALqsGyR/yjMzjU/G8AKg== </p>
-<p>&#x67E5;&#x770B;redis &#x5185;&#x5B58;&#x60C5;&#x51B5;:
-info memory</p>
-<p>watch:
-<a href="http://www.guoweiwei.com/2012/09/redis-status-and-performance-monitor.html" target="_blank">http://www.guoweiwei.com/2012/09/redis-status-and-performance-monitor.html</a></p>
-<p>redis-benchmark -h localhost -p 6379 -c 100 -n 100000</p>
-<p>redis-cli -h localhost -p 6379 monitor</p>
-<p>redis-cli -h localhost -p 6379 info</p>
-<p>redis-stat :
-java -jar redis-stat-0.4.13.jar --server</p>
+                                <h1 id="redux">redux</h1>
+<ol>
+<li><p>&#x7528;&#x6237;&#x53D1;&#x51FA;Action</p>
+<pre><code class="lang-js">store.dispatch(action);
+</code></pre>
+</li>
+<li><p>Store &#x81EA;&#x52A8;&#x8C03;&#x7528; Reducer,  &#x4F20;2&#x4E2A;&#x53C2;&#x6570; &#x5F53;&#x524D; State &#x548C; &#x6536;&#x5230;&#x7684; Action</p>
+<pre><code>let nextState = todoApp(previousState, action);
+</code></pre></li>
+<li><p>Reducer &#x4F1A;&#x8FD4;&#x56DE;&#x65B0;&#x7684; State</p>
+</li>
+<li><p>State &#x4E00;&#x65E6;&#x6709;&#x53D8;&#x5316;, Store &#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x66F4;&#x65B0; View</p>
+</li>
+</ol>
+<h1 id="react-redux">react-redux</h1>
+<p>React-Redux &#x5C06;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x5206;&#x6210;&#x4E24;&#x5927;&#x7C7B;&#xFF1A;UI &#x7EC4;&#x4EF6;&#xFF08;presentational component&#xFF09;&#x548C;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#xFF08;container component&#xFF09;&#x3002;</p>
+<h2 id="ui-&#x7EC4;&#x4EF6;--&#x53C8;&#x79F0;-&#x7EAF;&#x7EC4;&#x4EF6;">UI &#x7EC4;&#x4EF6;  &#x53C8;&#x79F0; &#x7EAF;&#x7EC4;&#x4EF6;</h2>
+<ul>
+<li>&#x53EA;&#x8D1F;&#x8D23; UI &#x7684;&#x5448;&#x73B0;&#xFF0C;&#x4E0D;&#x5E26;&#x6709;&#x4EFB;&#x4F55;&#x4E1A;&#x52A1;&#x903B;&#x8F91;</li>
+<li>&#x6CA1;&#x6709;&#x72B6;&#x6001;&#xFF08;&#x5373;&#x4E0D;&#x4F7F;&#x7528;this.state&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#xFF09;</li>
+<li>&#x6240;&#x6709;&#x6570;&#x636E;&#x90FD;&#x7531;&#x53C2;&#x6570;&#xFF08;this.props&#xFF09;&#x63D0;&#x4F9B;</li>
+<li>&#x4E0D;&#x4F7F;&#x7528;&#x4EFB;&#x4F55; Redux &#x7684; API</li>
+</ul>
+<h2 id="&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;--&#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x6570;&#x636E;">&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;  &#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x6570;&#x636E;</h2>
+<ul>
+<li>&#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x548C;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x4E0D;&#x8D1F;&#x8D23; UI &#x7684;&#x5448;&#x73B0;</li>
+<li>&#x5E26;&#x6709;&#x5185;&#x90E8;&#x72B6;&#x6001;</li>
+<li>&#x4F7F;&#x7528; Redux &#x7684; API</li>
+</ul>
+<h2 id="connect">connect</h2>
+<p>React-Redux &#x63D0;&#x4F9B;connect&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x4ECE; UI &#x7EC4;&#x4EF6;&#x751F;&#x6210;&#x5BB9;&#x5668;&#x7EC4;&#x4EF6;&#x3002;connect&#x7684;&#x610F;&#x601D;&#xFF0C;&#x5C31;&#x662F;&#x5C06;&#x8FD9;&#x4E24;&#x79CD;&#x7EC4;&#x4EF6;&#x8FDE;&#x8D77;&#x6765;&#x3002;</p>
+<h2 id="mapstatetoprops-mapdispatchtoprops">mapStateToProps, mapDispatchToProps</h2>
+<p>&#x524D;&#x8005;&#x8D1F;&#x8D23;&#x8F93;&#x5165;&#x903B;&#x8F91;&#xFF0C;&#x5373;&#x5C06;state&#x6620;&#x5C04;&#x5230; UI &#x7EC4;&#x4EF6;&#x7684;&#x53C2;&#x6570;&#xFF08;props&#xFF09;&#xFF0C;&#x540E;&#x8005;&#x8D1F;&#x8D23;&#x8F93;&#x51FA;&#x903B;&#x8F91;&#xFF0C;&#x5373;&#x5C06;&#x7528;&#x6237;&#x5BF9; UI &#x7EC4;&#x4EF6;&#x7684;&#x64CD;&#x4F5C;&#x6620;&#x5C04;&#x6210; Action&#x3002;</p>
+<h2 id="&#x7EC4;&#x4EF6;"><provider> &#x7EC4;&#x4EF6;</provider></h2>
+<p>Provider&#x5728;&#x6839;&#x7EC4;&#x4EF6;&#x5916;&#x9762;&#x5305;&#x4E86;&#x4E00;&#x5C42;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;App&#x7684;&#x6240;&#x6709;&#x5B50;&#x7EC4;&#x4EF6;&#x5C31;&#x9ED8;&#x8BA4;&#x90FD;&#x53EF;&#x4EE5;&#x62FF;&#x5230;state&#x4E86;</p>
+<h1 id="redux-thunk">Redux Thunk</h1>
 
                                 
                                 </section>
@@ -479,10 +487,14 @@ java -jar redis-stat-0.4.13.jar --server</p>
 
             
                 
-                <a href="502-pm2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 502-pm2">
+                <a href="201-react.html" class="navigation navigation-prev " aria-label="Previous page: 201-react">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="203-RN_android.html" class="navigation navigation-next " aria-label="Next page: 203-RN_android">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -491,7 +503,7 @@ java -jar redis-stat-0.4.13.jar --server</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"503-redis","level":"5.3","depth":1,"previous":{"title":"502-pm2","level":"5.2","depth":1,"path":"src/502-pm2.md","ref":"src/502-pm2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/503-redis.md","mtime":"2017-09-18T15:22:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-18T15:30:48.500Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"202-redux","level":"3.2","depth":1,"next":{"title":"203-RN_android","level":"3.3","depth":1,"path":"src/203-RN_android.md","ref":"src/203-RN_android.md","articles":[]},"previous":{"title":"201-react","level":"3.1","depth":1,"path":"src/201-react.md","ref":"src/201-react.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/202-redux.md","mtime":"2017-09-18T14:20:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-18T16:20:06.132Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
