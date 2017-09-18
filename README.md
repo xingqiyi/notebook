@@ -2,14 +2,16 @@
 
 ## [笔记](https://xingqiyi.github.io/blog)
 
-  
-
-* [001-git](src/001-git.md)
-* [002-md](src/002-md.md)
-* [003-npm_yarn](src/003-npm_yarn.md)
+ 
+* [001-js](src/001-js.md)
+* [002-css](src/002-css.md)
 ---
-* [101-vscode](src/101-vscode.md)
-* [102-eslint](src/102-eslint.md)
+* [101-git](src/101-git.md)
+* [102-md](src/102-md.md)
+* [103-yarn](src/103-yarn.md)
+* [104-npm](src/104-npm.md)
+* [105-vscode](src/105-vscode.md)
+* [106-eslint](src/106-eslint.md)
 ---
 * [201-react](src/201-react.md)
 * [202-redux](src/202-redux.md)
@@ -17,6 +19,12 @@
 * [204-RN_ios](src/204-RN_ios.md)
 * [205-RN_环境配置](src/205-RN_环境配置.md)
 ---
-* [301-js](src/301-js.md)
-* [302-css](src/302-css.md)
-* [303-node](src/303-node.md)
+
+* [401-shell](src/401-shell.md)
+* [402-linux](src/402-linux.md)
+* [403-kubuntu](src/403-kubuntu.md)
+---
+* [501-node](src/501-node.md)
+* [502-pm2](src/502-pm2.md)
+* [503-redis](src/503-redis.md)
+---

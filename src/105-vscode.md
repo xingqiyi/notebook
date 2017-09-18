@@ -1,3 +1,4 @@
+
 ## 选择
 
 `Alt + 上下键`   切换行
@@ -23,7 +24,7 @@
 
 ## 插件
 
-### setting_sync
+### setting_sync  不同设备 共享 vs code 设置
 
 `Ctrl + Shift + P  Sync:Reset...` 清除设置
 
