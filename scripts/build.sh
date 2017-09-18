@@ -24,7 +24,7 @@ cd ${ROOT_DIRECTORY}
 cp ${ROOT_DIRECTORY}/README.md ${ROOT_DIRECTORY}/SUMMARY.md
 
 rm -rf ${ROOT_DIRECTORY}/_book
-rm -rf ${ROOT_DIRECTORY}/api
+rm -rf ${ROOT_DIRECTORY}/build
 
 gitbook build
 

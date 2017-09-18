@@ -1,0 +1,761 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>RN_android · GitBook 使用教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Shuaixc<https://github.com/xingqiyi>">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="RN_ios.html" />
+    
+    
+    <link rel="prev" href="redux.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"zhangjikai/gitbook-use","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.zhangjikai.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="js.html">
+            
+                <a href="js.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="css.html">
+            
+                <a href="css.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    css
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="md.html">
+            
+                <a href="md.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="yarn.html">
+            
+                <a href="yarn.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    yarn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="npm.html">
+            
+                <a href="npm.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    npm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="vscode.html">
+            
+                <a href="vscode.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    vscode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="eslint.html">
+            
+                <a href="eslint.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    eslint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="react.html">
+            
+                <a href="react.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="redux.html">
+            
+                <a href="redux.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="RN_android.html">
+            
+                <a href="RN_android.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    RN_android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="RN_ios.html">
+            
+                <a href="RN_ios.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    RN_ios
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="RN_环境配置.html">
+            
+                <a href="RN_环境配置.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    RN_环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="shell.html">
+            
+                <a href="shell.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="linux.html">
+            
+                <a href="linux.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="kubuntu.html">
+            
+                <a href="kubuntu.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    kubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="node.html">
+            
+                <a href="node.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="pm2.html">
+            
+                <a href="pm2.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    pm2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="redis.html">
+            
+                <a href="redis.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >RN_android</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#react-native--android">React-native  android</a></li><ul><li><a href="#0-&#x8C03;&#x8BD5;">0 &#x8C03;&#x8BD5;</a></li><li><a href="#1--windows-android-&#x6BCF;&#x6B21;--&#x4E0B;&#x8F7D;-gradle&#x7684;&#x95EE;&#x9898;">1  windows android &#x6BCF;&#x6B21;  &#x4E0B;&#x8F7D; gradle&#x7684;&#x95EE;&#x9898;</a></li><li><a href="#2----failed-to-find-build-tools-revision-2502----android-sdk-&#x7248;&#x672C;-&#x95EE;&#x9898;">2    failed to find Build Tools revision 25.0.2    android sdk &#x7248;&#x672C; &#x95EE;&#x9898;</a></li><li><a href="#3-react-native-starter---&#x4E2D;--apikey-not-definded">3 react-native-starter   &#x4E2D;  API_KEY not definded</a></li><li><a href="#4--&#x547D;&#x4EE4;&#x884C;&#x7FFB;&#x5899;">4  &#x547D;&#x4EE4;&#x884C;&#x7FFB;&#x5899;</a></li><li><a href="#5---error-eperm-operation-not-permitted">5   Error: EPERM: operation not permitted,</a></li><li><a href="#6--&#x5F88;&#x6162;-resolving-dependencies-appreleaseapk">6  &#x5F88;&#x6162;: Resolving dependencies &apos;:app:_releaseApk&apos;</a></li><li><a href="#7-expected-a-component-class-got-object-object">7 expected a component class, got [object Object]</a></li><li><a href="#8-could-not-get-batchedbridge-make-sure">8 could not get batchedbridge make sure</a></li><li><a href="#9-android-&#x6253;&#x5305;&#x6B65;&#x9AA4;">9 android &#x6253;&#x5305;&#x6B65;&#x9AA4;</a></li></ul></ul></div><a href="#react-native--android" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="react-native--android"><a name="react-native--android" class="anchor-navigation-ex-anchor" href="#react-native--android"><i class="fa fa-link" aria-hidden="true"></i></a>React-native  android</h1>
+<h2 id="0-&#x8C03;&#x8BD5;"><a name="0-&#x8C03;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#0-&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>0 &#x8C03;&#x8BD5;</h2>
+<blockquote>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6447;&#x6643;&#x8BBE;&#x5907;&#x6216;&#x662F;&#x9009;&#x62E9;iOS&#x6A21;&#x62DF;&#x5668;&#x7684;&quot;Hardware&quot;&#x83DC;&#x5355;&#x4E2D;&#x7684;&quot;Shake Gesture&quot;&#x9009;&#x9879;&#x6765;&#x6253;&#x5F00;&#x5F00;&#x53D1;&#x83DC;&#x5355;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5728;iOS&#x6A21;&#x62DF;&#x5668;&#x4E2D;&#x8FD0;&#x884C;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x6309;&#x4E0B;Command&#x2318; + D &#x5FEB;&#x6377;&#x952E;&#xFF0C;Android&#x6A21;&#x62DF;&#x5668;&#x5BF9;&#x5E94;&#x7684;&#x5219;&#x662F;Command&#x2318; + M&#xFF08;windows&#x4E0A;&#x53EF;&#x80FD;&#x662F;F1&#x6216;&#x8005;F2&#xFF09;&#x3002;</p>
+</blockquote>
+<h2 id="1--windows-android-&#x6BCF;&#x6B21;--&#x4E0B;&#x8F7D;-gradle&#x7684;&#x95EE;&#x9898;"><a name="1--windows-android-&#x6BCF;&#x6B21;--&#x4E0B;&#x8F7D;-gradle&#x7684;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#1--windows-android-&#x6BCF;&#x6B21;--&#x4E0B;&#x8F7D;-gradle&#x7684;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>1  windows android &#x6BCF;&#x6B21;  &#x4E0B;&#x8F7D; gradle&#x7684;&#x95EE;&#x9898;</h2>
+<p>Exception in thread &#x201C;main&#x201D; java.net.ConnectException: Connection timed out: conn
+ect</p>
+<blockquote>
+<p>&#x624B;&#x52A8;&#x4E0B;&#x8F7D;:
+<a href="http://services.gradle.org/distributions/gradle-2.4-all.zip" target="_blank">http://services.gradle.org/distributions/gradle-2.4-all.zip</a></p>
+<p>&#x4FEE;&#x6539;&#x6539; {MyProject-path}\android\gradle\wrapper\gradle-wrapper &#x91CC;&#x7684; distributionUrl &#x4E3A;&#x672C;&#x5730;&#x8DEF;&#x5F84;&#xFF1A;
+distributionUrl=file:///D:/xingqiyi/RN/gradle-2.4-all.zip</p>
+</blockquote>
+<h2 id="2----failed-to-find-build-tools-revision-2502----android-sdk-&#x7248;&#x672C;-&#x95EE;&#x9898;"><a name="2----failed-to-find-build-tools-revision-2502----android-sdk-&#x7248;&#x672C;-&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#2----failed-to-find-build-tools-revision-2502----android-sdk-&#x7248;&#x672C;-&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>2    failed to find Build Tools revision 25.0.2    android sdk &#x7248;&#x672C; &#x95EE;&#x9898;</h2>
+<pre class="language-"><code class="lang-css">&#x89C1;rn &#x521D;&#x59CB;&#x5316; &#x6B65;&#x9AA4;
+Android Studio
+Tools -&gt; Android -&gt; SDK Manager
+</code></pre>
+<h2 id="3-react-native-starter---&#x4E2D;--apikey-not-definded"><a name="3-react-native-starter---&#x4E2D;--apikey-not-definded" class="anchor-navigation-ex-anchor" href="#3-react-native-starter---&#x4E2D;--apikey-not-definded"><i class="fa fa-link" aria-hidden="true"></i></a>3 react-native-starter   &#x4E2D;  API_KEY not definded</h2>
+<pre class="language-"><code class="lang-css"><span class="token property">issue</span><span class="token punctuation">:</span>
+Let copy .env.sample to .env file and change the configuration variables
+.env.sample &#x6587;&#x4EF6;  &#x6539;&#x540D;&#x4E3A;  .env
+</code></pre>
+<h2 id="4--&#x547D;&#x4EE4;&#x884C;&#x7FFB;&#x5899;"><a name="4--&#x547D;&#x4EE4;&#x884C;&#x7FFB;&#x5899;" class="anchor-navigation-ex-anchor" href="#4--&#x547D;&#x4EE4;&#x884C;&#x7FFB;&#x5899;"><i class="fa fa-link" aria-hidden="true"></i></a>4  &#x547D;&#x4EE4;&#x884C;&#x7FFB;&#x5899;</h2>
+<pre class="language-"><code class="lang-css">set HTTP_proxy=<span class="token property">http</span><span class="token punctuation">:</span>//127.0.0.<span class="token property">1</span><span class="token punctuation">:</span>62497
+set HTTPS_proxy=<span class="token property">http</span><span class="token punctuation">:</span>//127.0.0.<span class="token property">1</span><span class="token punctuation">:</span>62497
+</code></pre>
+<h2 id="5---error-eperm-operation-not-permitted"><a name="5---error-eperm-operation-not-permitted" class="anchor-navigation-ex-anchor" href="#5---error-eperm-operation-not-permitted"><i class="fa fa-link" aria-hidden="true"></i></a>5   Error: EPERM: operation not permitted,</h2>
+<pre class="language-"><code>&#x7F51;&#x7EDC;&#x95EE;&#x9898;
+</code></pre><h2 id="6--&#x5F88;&#x6162;-resolving-dependencies-appreleaseapk"><a name="6--&#x5F88;&#x6162;-resolving-dependencies-appreleaseapk" class="anchor-navigation-ex-anchor" href="#6--&#x5F88;&#x6162;-resolving-dependencies-appreleaseapk"><i class="fa fa-link" aria-hidden="true"></i></a>6  &#x5F88;&#x6162;: Resolving dependencies &apos;:app:_releaseApk&apos;</h2>
+<pre class="language-"><code class="lang-css"><span class="token selector">./android/build.gradle
+change your jcenter() to mavenCentral() :
+
+
+buildscript</span> <span class="token punctuation">{</span>
+    <span class="token selector">repositories</span> <span class="token punctuation">{</span>
+        // <span class="token function">jcenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+         <span class="token function">mavenCentral</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h2 id="7-expected-a-component-class-got-object-object"><a name="7-expected-a-component-class-got-object-object" class="anchor-navigation-ex-anchor" href="#7-expected-a-component-class-got-object-object"><i class="fa fa-link" aria-hidden="true"></i></a>7 expected a component class, got [object Object]</h2>
+<pre class="language-"><code class="lang-js">    &#x7EC4;&#x4EF6;&#x5927;&#x5C0F;&#x5199;&#x7684;&#x95EE;&#x9898;
+    JSX&#x4E2D; &#x4E0D;&#x80FD;&#x4F7F;&#x7528; div &#x7B49; html
+</code></pre>
+<h2 id="8-could-not-get-batchedbridge-make-sure"><a name="8-could-not-get-batchedbridge-make-sure" class="anchor-navigation-ex-anchor" href="#8-could-not-get-batchedbridge-make-sure"><i class="fa fa-link" aria-hidden="true"></i></a>8 could not get batchedbridge make sure</h2>
+<p><a href="https://stackoverflow.com/questions/34175416/how-to-use-offline-bundle-on-android-for-react-native-project" target="_blank">https://stackoverflow.com/questions/34175416/how-to-use-offline-bundle-on-android-for-react-native-project</a></p>
+<pre class="language-"><code class="lang-css">react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+</code></pre>
+<ul>
+<li><p>1 when server start, open next terminal with same path as project path</p>
+</li>
+<li><p>2 copy and paste this command: Before you copy and paste command in command propmt, make assets folder in project respective path as: android/app/src/main/assets</p>
+<blockquote>
+<p>paste this command in command prompt and run:</p>
+<p>react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/</p>
+</blockquote>
+</li>
+<li><p>3 Then in assets folder there will appear file as index.android.bundle</p>
+</li>
+<li><p>4 Finally, run command: react-native run-android(while building new offline apk you need not to start server, your offline js file will help you to build apk file.)</p>
+</li>
+<li><p>5 Final, apk now build is ready for running in different devices(run apk from app/src/build/debug.apk).</p>
+</li>
+<li><p>6 Sometimes newly made apk will run without showing images, If application runs without image , then copy and paste the specific image resource folder into android/app/src/main/assets/(image source folder)</p>
+</li>
+<li><p>7 Again rerun application and thus build apk is ready for running.</p>
+</li>
+</ul>
+<h2 id="9-android-&#x6253;&#x5305;&#x6B65;&#x9AA4;"><a name="9-android-&#x6253;&#x5305;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#9-android-&#x6253;&#x5305;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>9 android &#x6253;&#x5305;&#x6B65;&#x9AA4;</h2>
+<ul>
+<li>1 &#x6DFB;&#x52A0;&#x6587;&#x4EF6;&#x5939;: \android\app\src\main\assets</li>
+<li>2 &#x8FD0;&#x884C; react-native run-android</li>
+<li>3 &#x8FD0;&#x884C; react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/</li>
+<li>4 &#x8FD0;&#x884C; react-native run-android</li>
+<li>5 \android\app\build\outputs\apk\app-debug.apk</li>
+<li>6 &#x5982;&#x679C;&#x56FE;&#x7247;&#x5F02;&#x5E38;,&#x590D;&#x5236;&#x56FE;&#x7247;&#x5230; assets&#x6587;&#x4EF6;&#x5939;,rerun </li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; zhangjikai.com 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2017-09-19 01:33:41
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="redux.html" class="navigation navigation-prev " aria-label="Previous page: redux">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="RN_ios.html" class="navigation navigation-next " aria-label="Next page: RN_ios">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RN_android","level":"3.3","depth":1,"next":{"title":"RN_ios","level":"3.4","depth":1,"path":"src/RN_ios.md","ref":"src/RN_ios.md","articles":[]},"previous":{"title":"redux","level":"3.2","depth":1,"path":"src/redux.md","ref":"src/redux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","mermaid@^0.0.9","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","3-ba@^0.9.0"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © zhangjikai.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/xingqiyi"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"mermaid":{},"donate":{"alipay":"https://zhangjikai.com/resource/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://zhangjikai.com/resource/weixin.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/gitbook-use","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/gitbook-use/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"Shuaixc<https://github.com/xingqiyi>","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook 使用教程","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"记录 GitBook 的配置和一些插件的使用"},"file":{"path":"src/RN_android.md","mtime":"2017-09-18T17:33:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-18T18:16:57.042Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
