@@ -28,13 +28,14 @@ rm -rf ${ROOT_DIRECTORY}/api
 
 gitbook build
 
-# mv ${ROOT_DIRECTORY}/_book ${ROOT_DIRECTORY}/api
-# cd ${CURRENT_DIR}
 
+mv ${ROOT_DIRECTORY}/_book ${ROOT_DIRECTORY}/build
+cd ${CURRENT_DIR}
 
-rm -rf ${ROOT_DIRECTORY}/_book/.svn
-rm -rf ${ROOT_DIRECTORY}/_book/src/*.md
-rm -rf ${ROOT_DIRECTORY}/_book/scripts/
+rm -rf ${ROOT_DIRECTORY}/build/.svn
+rm -rf ${ROOT_DIRECTORY}/build/src/*.md
+rm -rf ${ROOT_DIRECTORY}/build/scripts/
+
 
 
 cd ${CURRENT_DIR}
