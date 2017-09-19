@@ -1,6 +1,6 @@
 
 
-## [笔记](https://xingqiyi.github.io/blog)
+### [js](https://xingqiyi.github.io/blog)
 
  
 * [js](src/js.md)
