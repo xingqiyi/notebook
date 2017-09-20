@@ -18,4 +18,4 @@ inner{
 
 
 
-## space-evenly 在 android 中不支持
+## space-evenly 在 android 中不支持 11

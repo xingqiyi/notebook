@@ -1,4 +1,7 @@
-## es6 import  export default
+
+###   export  import
+
+
 
 
 

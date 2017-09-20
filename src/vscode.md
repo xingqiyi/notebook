@@ -5,14 +5,28 @@
 
 `Alt + 左键`     选择多个位置
 
+`F3` 选中下一个重复的
+
 `Ctrl + Shift + L`  选中所有 重复的
 
 `Alt + Shift + 左键`   选择多行
 
 `Ctrl + Shift + J`  搜索时 设置条件
 
- 
 
+`F2` 重命名变量名
+
+
+## 定义
+`F12`           转到定义
+
+`Alt + F12`     查看定义
+
+`Shift + F12`   查看所有引用
+
+
+
+## 查找
 ```css
 *    to match one or more characters in a path segment
 ?    to match on one character in a path segment
