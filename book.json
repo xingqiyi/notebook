@@ -62,7 +62,7 @@
             "url": "https://github.com/xingqiyi"
         },
         "github-buttons": {
-            "repo": "zhangjikai/gitbook-use",
+            "repo": "xingqiyi/blog",
             "types": [
                 "star"
             ],
@@ -109,7 +109,7 @@
             "skipFirstH1": true
         },
         "edit-link": {
-            "base": "https://github.com/xingqiyi/blog",
+            "base": "https://github.com/xingqiyi/blog/edit/master/",
             "label": "Edit This Page"
         },
         "sitemap-general": {
