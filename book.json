@@ -76,7 +76,7 @@
         "sharing": {
             "weibo": true,
             "facebook": true,
-            "twitter": true,
+            "twitter": false,
             "google": false,
             "instapaper": false,
             "vk": false,
@@ -89,7 +89,7 @@
             ]
         },
         "tbfed-pagefooter": {
-            "copyright": "Copyright © zhangjikai.com 2017",
+            "copyright": "Copyright © xingqiyi.github.io 2017",
             "modify_label": "该文件修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
